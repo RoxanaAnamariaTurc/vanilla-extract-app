@@ -1,9 +1,10 @@
 import React from "react";
+import { button } from "./Button.css.ts";
 
-interface ButtonProps {
+export interface ButtonProps {
   variant: "primary" | "secondary";
 }
 
 export const Button = ({ variant }: ButtonProps) => {
-  return <button>Click me!</button>;
+  return <button className={button}>Click me!</button>;
 };
